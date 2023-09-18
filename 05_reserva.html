@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar | Dotori Tour Agency</title>
+
+    <!-- MI FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/logo/dotoritour-logotipo.jpg">
+
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="css/01_home.css">
+    <link rel="stylesheet" href="css/06_reserva.css">
+
+    <!-- CDN FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar"></nav>
+
+    <!-- Formulario de reservar -->
+    <main>
+        <serction class="resform-container">
+            <h2 class="form-title">reservar tour</h2>
+            <form action="#" class="reservar-form" id="resform" name="resform">
+                <div class="input-box-rf">
+                    <label for="nombre">nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="reserv-input" placeholder="nombre">
+                    <span class="errorMSG"></span>
+                </div>
+                <div class="column">
+                    <div class="input-box-rf">
+                        <label for="telephone">teléfono</label>
+                        <input type="tel" name="telephoone" id="telephone" placeholder="teléfono" class="reserv-input">
+                        <span class="errorMSG"></span>
+                    </div>
+                    <div class="input-box-rf">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" placeholder="correo electrónico"
+                            class="reserv-input">
+                        <span class="errorMSG"></span>
+                    </div>
+                </div>
+                <div class="gender-box">
+                    <h3>género</h3>
+                    <div class="gender-option reserv-input">
+                        <div class="gender-form">
+                            <input type="radio" name="gender" class="genero" id="check-mail">
+                            <label for="check-mail">hombre</label>
+                        </div>
+                        <div class="gender-form">
+                            <input type="radio" name="gender" class="genero" id="check-female">
+                            <label for="check-female">mujer</label>
+                        </div>
+                        <div class="gender-form">
+                            <input type="radio" name="gender" class="genero" id="check-other">
+                            <label for="check-other">otro</label>
+                        </div>
+                    </div>
+                    <span class="errorMSG"></span>
+                </div>
+                <div class="input-box-rf address">
+                    <label for="address01">dirección</label>
+                    <input type="text" name="address01" id="address01" placeholder="dirección" class="reserv-input">
+                    <span class="errorMSG"></span>
+                    <div class="column">
+                        <input type="text" name="postcode" id="postcode" placeholder="códio postal" class="reserv-input">
+                        <input type="text" name="city" id="city" placeholder="ciudad" class="reserv-input">
+                    </div>
+                    <span class="errorMSG"></span>
+                    <span class="errorMSG"></span>
+                    <div class="select-box country-box">
+                        <select name="country" id="country" class="reserv-input">
+                            <option value="pais" hidden>país</option>
+                            <option value="spain">españa</option>
+                            <option value="south-korea">corea del sur</option>
+                            <option value="mexico">mexico</option>
+                            <option value="germany">alemania</option>
+                            <option value="holland">holanda</option>
+                            <option value="usa">united states of america</option>
+                            <option value="uae">united arab of emirates</option>
+                        </select>
+                    </div>
+                    <span class="errorMSG"></span>
+                </div>
+                <div class="input-box-rf">
+                    <label for="tour">tour que quiere reservar</label>
+                    <div class="select-box">
+                        <select name="tour" class="tour-box reserv-input" id="tour">
+                            <option value="tourname" hidden>tour name</option>
+                            <option value="gaudi-half">gaudi half time</option>
+                            <option value="gaudi-full">gaudi full time</option>
+                            <option value="montserrat">montserrat y sitges tour</option>
+                            <option value="girona">dalí girona tour</option>
+                            <option value="barrigotic">barrio gótico tour</option>
+                            <option value="viptour">VIP tour privado</option>
+                        </select>
+                    </div>
+                    <span class="errorMSG"></span>
+                </div>
+                <div class="column">
+                    <div class="input-box-rf">
+                        <label for="tourdate">fecha de tour</label>
+                        <input type="date" class="reserv-input" name="tourdate" id="tourdate" placeholder="fecha de tour">
+                        <span class="errorMSG"></span>
+                    </div>
+                    <div class="input-box-rf">
+                        <label for="discapable">discapacidad</label>
+                        <input type="text" class="reserv-input" name="discapable" id="discapable" placeholder="Sí, no o nota.."
+                            class="reserv-input">
+                        <span class="errorMSG"></span>
+                    </div>
+                </div>
+                <div class="language-box">
+                    <h3>idioma para tour</h3>
+                    <div class="language-option reserv-input">
+                        <div class="language-form">
+                            <input type="radio"  class="idoma" name="language" id="check-spanish">
+                            <label for="check-spanish">español</label>
+                        </div>
+                        <div class="language-form">
+                            <input type="radio" class="idoma" name="language" id="check-english">
+                            <label for="check-english">inglés</label>
+                        </div>
+                        <div class="language-form">
+                            <input type="radio" class="idoma" name="language" id="check-korean">
+                            <label for="check-korean">coreano</label>
+                        </div>
+                    </div>
+                    <span class="errorMSG"></span>
+                </div>
+                <button class="btn-send-form">reservar</button>
+            </form>
+        </serction>
+    </main>
+    <div class="footer"></div>
+
+    <script src="js/02_nav.js"></script>
+    <script src="js/03_footer.js"></script>
+    <script src="js/01_home.js"></script>
+    <script src="js/06_reserva.js"></script>
+
+</body>
+
+</html>

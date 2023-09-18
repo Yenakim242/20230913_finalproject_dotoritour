@@ -1,0 +1,175 @@
+/* FORM STYLE */
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #feffd0;
+    /* border-top: 1px solid #a9a9a9; */
+}
+
+.resform-container {
+    /* position: relative; */
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0 0 0 0.1);
+    text-transform: capitalize;
+}
+
+.resform-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.resform-container .reservar-form {
+    margin-top: 30px;
+}
+
+.reservar-form input:not(#tourdate, #discapable) {
+    text-transform: capitalize;
+}
+
+.reservar-form .input-box-rf {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box-rf label {
+    color: #333;
+}
+
+.reservar-form .input-box-rf input,
+.reservar-form .select-box {
+    /* position: relative; */
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box-rf input:focus {
+    box-shadow: 0 1px 0 rgba(180, 180, 180, 0.1);
+}
+
+.reservar-form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.reservar-form .gender-box,
+.reservar-form .language-box {
+    margin-top: 20px;
+}
+
+.gender-box h3,
+.language-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.reservar-form .gender-option,
+.reservar-form .language-option,
+.reservar-form .gender-form,
+.reservar-form .language-form {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.reservar-form .gender-form,
+.reservar-form .language-form {
+    column-gap: 5px;
+}
+
+/* .gender-form input, .language-form input{
+    accent-color: #fbff00;
+} */
+
+.reservar-form .gender-form input,
+.reservar-form .gender-form label,
+.reservar-form .language-form input,
+.reservar-form .language-form label {
+    cursor: pointer;
+}
+
+.gender-form,
+.language-form {
+    color: #707070;
+}
+
+.address input,
+.select-box {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.reservar-form button {
+    height: 55px;
+    width: 100%;
+    color: #000;
+    background-color: #fcff61;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+}
+
+.reservar-form button:hover {
+    background-color: #fdff9c;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:500px) {
+    .reservar-form .column {
+        flex-wrap: wrap;
+    }
+
+    .reservar-form .gender-option,
+    .reservar-form .gender-form,
+    .reservar-form .language-option,
+    .reservar-form .language-option {
+        row-gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .resform-container h2, .resform-container label{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Validación del formulario reservar */
+.errorMSG {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: red;
+    font-size: 0.8rem;
+}
+

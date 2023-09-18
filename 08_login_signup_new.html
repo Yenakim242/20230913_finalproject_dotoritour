@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in | Dotori Tour Agency</title>
+
+    <!-- MI FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/logo/dotoritour-logotipo.jpg">
+
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="css/09_login_signup.css">
+
+    <!-- CDN FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- LOGIN -->
+    <main>
+        <img src="images/signup/loading.gif" alt="loader image" class="loader">
+
+        <div class="alert-box">
+            <img src="images/signup/error.png" alt="alert image" class="alert-img">
+            <p class="alert-msg">error message</p>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <div class="contenido01" id="contentAccount01">
+            <form class="log-in d-none">
+                <img src="images/logo/whitebglogo.png" alt="logo image" class="logo">
+                <h3>Entrar</h3>
+                <input type="email" name="usuario_para_entrar" id="usuario_para_entrar" placeholder="Usuario">
+                <span></span>
+
+                <input type="password" name="claves_para_entrar" id="claves_para_entrar" placeholder="Contraseña">
+                <span></span>
+
+                <input type="button" value="Entrar" id="boton_entrar">
+                <span></span>
+                <p class="aRegistrar">¿No teines cuenta? ¡Registrate!</p>
+            </form>
+        </div>
+
+        <!-- REGISTRO Form-->
+        <div class="contenido02" id="contentAccount02">
+            <form class="registrar">
+                <img src="images/logo/whitebglogo.png" alt="logo image" class="logo">
+                <h3>Registro</h3>
+                <input type="email" name="usuario_para_registrar" id="usuario_para_registrar" placeholder="email">
+                <span></span>
+
+                <input type="password" name="claves_para_registrar" id="claves_para_registrar" placeholder="Contraseña">
+                <span></span>
+
+                <input type="button" value="Registrate" id="boton_registrar">
+                <span></span>
+                <p class="aEntrar">¿Ya tienes cuenta? ¡Entra!</p>
+            </form>
+        </div>
+    </main>
+
+    <!-- MI JS -->
+    <script src="js/09_login_signup.js"></script>
+
+</body>
+
+</html>
